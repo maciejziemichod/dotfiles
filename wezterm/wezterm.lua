@@ -12,6 +12,29 @@ config.window_padding = {
 config.font_size = 16
 config.harfbuzz_features = { "calt=0", "clig=0", "liga=0" } -- disable ligatures
 config.hide_tab_bar_if_only_one_tab = true
+config.tab_bar_at_bottom = true
+config.use_fancy_tab_bar = false
+
+local theme_bg_color = "#0D1926"
+local theme_light_color = "#C2C2C2"
+
+config.colors = {
+	tab_bar = {
+		background = theme_bg_color,
+		active_tab = {
+			bg_color = "#050d15",
+			fg_color = theme_light_color,
+		},
+		inactive_tab = {
+			bg_color = theme_bg_color,
+			fg_color = theme_light_color,
+		},
+		new_tab = {
+			bg_color = theme_bg_color,
+			fg_color = theme_light_color,
+		},
+	},
+}
 
 config.keys = {
 	{
