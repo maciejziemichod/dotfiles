@@ -55,6 +55,12 @@ config.keys = {
 		mods = "OPT",
 		action = wezterm.action({ SendString = "\x1bf" }),
 	},
+	-- cmd+backspace to clear current line
+	{
+		key = "Backspace",
+		mods = "CMD",
+		action = wezterm.action({ SendString = "\x15" }),
+	},
 }
 
 -- launch in full screen
