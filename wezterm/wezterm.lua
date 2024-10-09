@@ -37,10 +37,23 @@ config.colors = {
 }
 
 config.keys = {
+	-- ctrl+shift+n to toggle full screen
 	{
 		key = "n",
 		mods = "SHIFT|CTRL",
 		action = wezterm.action.ToggleFullScreen,
+	},
+	-- option+◀ to go backward-word
+	{
+		key = "LeftArrow",
+		mods = "OPT",
+		action = wezterm.action({ SendString = "\x1bb" }),
+	},
+	-- option+▶ to go forward-word
+	{
+		key = "RightArrow",
+		mods = "OPT",
+		action = wezterm.action({ SendString = "\x1bf" }),
 	},
 }
 
