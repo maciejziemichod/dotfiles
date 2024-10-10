@@ -55,11 +55,23 @@ config.keys = {
 		mods = "OPT",
 		action = wezterm.action({ SendString = "\x1bf" }),
 	},
-	-- cmd+backspace to clear current line
+	-- cmd+backspace to clear the current line
 	{
 		key = "Backspace",
 		mods = "CMD",
 		action = wezterm.action({ SendString = "\x15" }),
+	},
+	-- cmd+▶ to go to the end of the line
+	{
+		key = "LeftArrow",
+		mods = "CMD",
+		action = wezterm.action({ SendString = "\x01" }),
+	},
+	-- cmd+◀ to go to the start of the line
+	{
+		key = "RightArrow",
+		mods = "CMD",
+		action = wezterm.action({ SendString = "\x05" }),
 	},
 }
 
