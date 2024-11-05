@@ -14,6 +14,7 @@ config.harfbuzz_features = { "calt=0", "clig=0", "liga=0" } -- disable ligatures
 config.hide_tab_bar_if_only_one_tab = true
 config.tab_bar_at_bottom = true
 config.use_fancy_tab_bar = false
+config.max_fps = 120
 
 local theme_bg_color = "#0D1926"
 local theme_light_color = "#C2C2C2"
